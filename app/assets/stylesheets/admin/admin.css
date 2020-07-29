@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background-color: #e9eef3;
+  font-family: system-ui,-apple-system, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+div.container {
+  margin: 10rem auto 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 64rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+}
+
+div.row {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: .25rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1.25rem;
+  padding: .75rem 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  border: 1px solid rgba(210,214,220, 1);
+  border-radius: .25rem;
+}
+
+button {
+  width: 100%;
+  padding: .875rem 1.25rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: .25rem;
+  display: inline-block;
+  line-height: 1.25rem;
+  cursor: pointer;
+  background-color: #3FD9B2;
+  border: 1px solid #3FD9B2;
+}
+
+div.flash {
+  padding: 1rem;
+  border-radius: .375rem;
+  font-weight: 500;
+  font-size: .875rem;
+  margin-bottom: 1.5rem;
+}
+
+div.flash.alert {
+  background-color: rgba(253,242,242,1);
+  color: rgba(155,28,28,1);
+
+}

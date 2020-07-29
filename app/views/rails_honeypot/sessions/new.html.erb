@@ -1,0 +1,16 @@
+<h2>Sign in to our admin</h2>
+<%= form_with url: session_path do |form| %>
+  <% if flash[:alert] %>
+    <div class="flash alert"><%= flash[:alert] %></div>
+  <% end %>
+  <div class="row">
+    <%= form.label :email, 'Email Address' %>
+    <%= form.email_field :email, placeholder: 'john@doe.com' %>
+  </div>
+  <div class="row">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <%= form.button 'Login' %>
+<% end %>
