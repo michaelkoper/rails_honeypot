@@ -3,6 +3,8 @@ $:.push File.expand_path("lib", __dir__)
 # Maintain your gem's version:
 require "rails_honeypot/version"
 
+rails_version = ENV['RAILS_VERSION'] || '6.0.0'
+
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |spec|
   spec.name        = "rails_honeypot"
@@ -16,5 +18,5 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  spec.add_dependency "rails", "~> 6.0.0"
+  spec.add_dependency 'rails', ">= #{rails_version}"
 end
